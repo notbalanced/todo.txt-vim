@@ -117,9 +117,10 @@ endfunction
 
 " Folding {{{1
 " Options {{{2
-setlocal foldmethod=expr
-setlocal foldexpr=TodoFoldLevel(v:lnum)
-setlocal foldtext=TodoFoldText()
+" CWM - Disable folding text in todo.txt
+" setlocal foldmethod=expr
+" setlocal foldexpr=TodoFoldLevel(v:lnum)
+" setlocal foldtext=TodoFoldText()
 
 " Go to first completed task
 let oldpos=getcurpos()
